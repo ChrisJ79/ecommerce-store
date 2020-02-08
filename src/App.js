@@ -14,8 +14,8 @@ function App() {
   return (
     <Switch>
       <Route exact path='/' component={HomePage} />
-      <Route path="/#/shop" component={ShopPage} />
-      <Route path="/#/hats" component={HatsPage} />
+      <Route path="/shop" component={ShopPage} />
+      <Route path="/hats" component={HatsPage} />
     </Switch>
   );
 }
