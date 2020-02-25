@@ -18,17 +18,17 @@ class SignIn extends Component {
 handleSubmit = event => {
     event.preventDefault();
     this.setState({ email: '', password: '' });
-}
+};
 
 handleChange = event => {
     const {value, name} = event.target;
     this.setState({[name]: value});
-}
+};
 
     render() {
         return(
             <div className="sign-in">
-                <h2>I already have an email account</h2>
+                <h2 className="title">I already have an email account</h2>
                 <span>Sign in with your email and password</span>
                 <form onSubmit={this.handleSubmit}>
                     <FormInput
@@ -36,7 +36,7 @@ handleChange = event => {
                         type="email"
                         value={this.state.email}
                         handleChange={this.handleChange}
-                        label='email'
+                        label='Email'
                         required
                     />
                     <FormInput
@@ -44,7 +44,7 @@ handleChange = event => {
                         type="password"
                         value={this.state.password}
                         handleChange={this.handleChange}
-                        label='password'
+                        label='Password'
                         required
                     />
                     <div className="buttons">

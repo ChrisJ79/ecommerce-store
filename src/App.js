@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter, HashRouter, Link, Switch, Router, Route } from 'react-router-dom';
+import { HashRouter, Link, Switch, Router, Route } from 'react-router-dom';
 import HomePage from './pages/homepage/homepage';
 import ShopPage from './pages/shop/shoppage';
 import SignInAndRegister from './pages/sign-in-and-register/sign-in-and-register';
